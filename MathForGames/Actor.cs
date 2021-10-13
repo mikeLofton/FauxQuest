@@ -15,6 +15,7 @@ namespace MathForGames
     {
         private Icon _icon;
         private string _name;
+        private float _health;
         private Vector2 _position;
         private bool _started;
 
@@ -35,6 +36,11 @@ namespace MathForGames
         public Icon Icon
         {
             get { return _icon; }
+        }
+
+        public float Health
+        {
+            get { return _health; }
         }
 
         public Actor(char icon, float x, float y, string name = "Actor", ConsoleColor color = ConsoleColor.White) : 

@@ -39,14 +39,18 @@ namespace MathForGames
         private void Start()
         {
             Scene scene = new Scene();
-            Actor actor = new Actor('P', new MathLibrary.Vector2 { X = 0, Y = 0 }, "Actor1", ConsoleColor.Red);
-            Actor actor2 = new Actor('A', new MathLibrary.Vector2 { X = 10, Y = 10 }, "Actor2", ConsoleColor.Red);
-            Actor projectile = new Actor('*', new MathLibrary.Vector2 { X = 5, Y = 15 }, "Projectile", ConsoleColor.Blue);
-            Player player = new Player('@', 5, 5, 1, "Player", ConsoleColor.Green);
 
-            scene.AddActor(actor);
-            scene.AddActor(actor2);
-            scene.AddActor(player);     
+            Actor enemy1 = new Actor('E', 20, 10, "Enemy1", ConsoleColor.Red);
+            Actor enemy2 = new Actor('E', 6, 2, "Enemy2", ConsoleColor.Red);
+            Actor enemy3 = new Actor('E', 7, 16, "Enemy3", ConsoleColor.Red);
+            Player player = new Player('H', 5, 5, 1, "Player", ConsoleColor.Green);
+            Actor shot = new Actor('*', 0, 0, "Shot", ConsoleColor.Blue);
+
+            scene.AddActor(player);
+            scene.AddActor(enemy1);
+            scene.AddActor(enemy2);
+            scene.AddActor(enemy3);
+            scene.AddActor(shot);
 
             _currentSceneIndex = AddScene(scene);
 

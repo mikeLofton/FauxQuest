@@ -43,16 +43,19 @@ namespace MathForGames
             if (keyPressed == ConsoleKey.S)
                 moveDirection = new Vector2 { Y = 1 };
 
+            if (keyPressed == ConsoleKey.Spacebar)
+            {
+                moveDirection = new Vector2 { X = 2 };
+            }
+
             Velocity = moveDirection * Speed;
 
-            Position += Velocity;
-
-            
+            Position += Velocity;         
         }
 
         public override void OnCollision(Actor actor)
         {
-            Engine.CloseApplication();
+            
         }
     }
 }
