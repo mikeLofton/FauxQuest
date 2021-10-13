@@ -9,7 +9,7 @@ namespace MathForGames
         /// <summary>
         /// Array that contain all actors in the scene.
         /// </summary>
-        private Actor[] _actors;
+        private Actor[] _actors;       
 
         public Scene()
         {
@@ -91,7 +91,7 @@ namespace MathForGames
 
             //Set the old array to be the new array
             _actors = tempArray;
-        }
+        }      
 
         /// <summary>
         /// Removes the actor from the scene

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FauxQuest", "MathForGames\FauxQuest.csproj", "{4098F5E2-4BF9-47CE-9C7E-35DE5C0F458C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathForGames", "MathForGames\MathForGames.csproj", "{4098F5E2-4BF9-47CE-9C7E-35DE5C0F458C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathLibrary", "MathLibrary\MathLibrary.csproj", "{47F523A6-F998-4729-B300-A9A937D000F5}"
 EndProject

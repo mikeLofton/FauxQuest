@@ -44,6 +44,7 @@ namespace MathForGames
             Actor enemy2 = new Actor('E', 6, 2, "Enemy2", ConsoleColor.Red);
             Actor enemy3 = new Actor('E', 7, 16, "Enemy3", ConsoleColor.Red);
             Player player = new Player('H', 5, 5, 1, "Player", ConsoleColor.Green);
+            Projectile shot = new Projectile('*', 0, 0, 1, "Shot", ConsoleColor.Blue);
             
             scene.AddActor(player);
             scene.AddActor(enemy1);
@@ -58,7 +59,7 @@ namespace MathForGames
         }
         
         /// <summary>
-        /// Called everytime the gane loops
+        /// Called everytime the game loops
         /// </summary>
         private void Update()
         {

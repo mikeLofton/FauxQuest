@@ -28,6 +28,14 @@ namespace MathForGames
             _speed = speed;
         }
 
+        public static void SpawnProjectile(Projectile projectile)
+        {
 
+        }
+
+        public override void OnCollision(Actor actor)
+        {
+
+        }
     }
 }
