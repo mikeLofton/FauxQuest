@@ -39,13 +39,14 @@ namespace MathForGames
         private void Start()
         {
             Scene scene = new Scene();
-            Actor actor = new Actor('P', new MathLibrary.Vector2 { X = 0, Y = 0 }, "Actor1", ConsoleColor.Yellow);
-            Actor actor2 = new Actor('A', new MathLibrary.Vector2 { X = 10, Y = 10 }, "Actor2", ConsoleColor.Green);
-            Player player = new Player('@', 5, 5, 1, "Player", ConsoleColor.DarkMagenta);
+            Actor actor = new Actor('P', new MathLibrary.Vector2 { X = 0, Y = 0 }, "Actor1", ConsoleColor.Red);
+            Actor actor2 = new Actor('A', new MathLibrary.Vector2 { X = 10, Y = 10 }, "Actor2", ConsoleColor.Red);
+            Actor projectile = new Actor('*', new MathLibrary.Vector2 { X = 5, Y = 15 }, "Projectile", ConsoleColor.Blue);
+            Player player = new Player('@', 5, 5, 1, "Player", ConsoleColor.Green);
 
             scene.AddActor(actor);
             scene.AddActor(actor2);
-            scene.AddActor(player);
+            scene.AddActor(player);     
 
             _currentSceneIndex = AddScene(scene);
 

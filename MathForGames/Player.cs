@@ -43,7 +43,6 @@ namespace MathForGames
             if (keyPressed == ConsoleKey.S)
                 moveDirection = new Vector2 { Y = 1 };
 
-
             Velocity = moveDirection * Speed;
 
             Position += Velocity;
