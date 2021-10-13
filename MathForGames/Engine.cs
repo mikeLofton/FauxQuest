@@ -44,13 +44,11 @@ namespace MathForGames
             Actor enemy2 = new Actor('E', 6, 2, "Enemy2", ConsoleColor.Red);
             Actor enemy3 = new Actor('E', 7, 16, "Enemy3", ConsoleColor.Red);
             Player player = new Player('H', 5, 5, 1, "Player", ConsoleColor.Green);
-            Actor shot = new Actor('*', 0, 0, "Shot", ConsoleColor.Blue);
-
+            
             scene.AddActor(player);
             scene.AddActor(enemy1);
             scene.AddActor(enemy2);
-            scene.AddActor(enemy3);
-            scene.AddActor(shot);
+            scene.AddActor(enemy3);          
 
             _currentSceneIndex = AddScene(scene);
 

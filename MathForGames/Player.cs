@@ -45,7 +45,7 @@ namespace MathForGames
 
             if (keyPressed == ConsoleKey.Spacebar)
             {
-                moveDirection = new Vector2 { X = 2 };
+                
             }
 
             Velocity = moveDirection * Speed;
