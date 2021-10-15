@@ -49,7 +49,8 @@ namespace MathForGames
             scene.AddActor(player);
             scene.AddActor(enemy1);
             scene.AddActor(enemy2);
-            scene.AddActor(enemy3);          
+            scene.AddActor(enemy3);
+            scene.AddActor(shot);
 
             _currentSceneIndex = AddScene(scene);
 

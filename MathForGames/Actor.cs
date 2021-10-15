@@ -41,6 +41,7 @@ namespace MathForGames
         public float Health
         {
             get { return _health; }
+            set { _health = value; }
         }
 
         public Actor(char icon, float x, float y, string name = "Actor", ConsoleColor color = ConsoleColor.White) : 
@@ -60,7 +61,8 @@ namespace MathForGames
 
         public virtual void Update()
         {
-            
+            _position.X = Position.X + 1;
+            _position.Y = Position.Y + 1; 
         }
 
         public virtual void Draw()

@@ -9,6 +9,8 @@ namespace MathForGames
     {
         private float _speed;
         private Vector2 _velocity;
+        private Vector2 _position;
+        
 
         public float Speed
         {
@@ -22,16 +24,12 @@ namespace MathForGames
             set { _velocity = value; }
         }
 
-        public Projectile(char icon, float x, float y, float speed, string name = "Actor", ConsoleColor color = ConsoleColor.White) :
+        public Projectile(char icon, float x, float y, float speed, string name = "Projectile", ConsoleColor color = ConsoleColor.White) :
             base(icon, x, y, name, color)
         {
             _speed = speed;
         }
 
-        public static void SpawnProjectile(Projectile projectile)
-        {
-
-        }
 
         public override void OnCollision(Actor actor)
         {
