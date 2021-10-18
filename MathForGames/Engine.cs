@@ -39,18 +39,14 @@ namespace MathForGames
         private void Start()
         {
             Scene scene = new Scene();
+   
+            Player player = new Player('H', 0, 16, 2, "Player", ConsoleColor.Green);
+            Actor goal = new Actor('G', 100, 16, "Goal", ConsoleColor.Yellow);
+            Actor rain1 = new Actor('|', 2, 0, "Rain1", ConsoleColor.Blue);
 
-            Actor enemy1 = new Actor('E', 20, 10, "Enemy1", ConsoleColor.Red);
-            Actor enemy2 = new Actor('E', 6, 2, "Enemy2", ConsoleColor.Red);
-            Actor enemy3 = new Actor('E', 7, 16, "Enemy3", ConsoleColor.Red);
-            Player player = new Player('H', 5, 5, 1, "Player", ConsoleColor.Green);
-            Projectile shot = new Projectile('*', 0, 0, 1, "Shot", ConsoleColor.Blue);
-            
             scene.AddActor(player);
-            scene.AddActor(enemy1);
-            scene.AddActor(enemy2);
-            scene.AddActor(enemy3);
-            scene.AddActor(shot);
+            scene.AddActor(goal);
+            scene.AddActor(rain1);
 
             _currentSceneIndex = AddScene(scene);
 
@@ -76,7 +72,7 @@ namespace MathForGames
         private void Draw()
         {
             //Clears the stuff that was on the screen in the last frame
-            _buffer = new Icon[Console.WindowWidth, Console.WindowHeight - 1];
+            _buffer = new Icon[Console.WindowWidth - 1, Console.WindowHeight - 1];
 
             //Reset the cursor position to the top so the previous screen is drawn over
             Console.SetCursorPosition(0, 0);
@@ -180,6 +176,11 @@ namespace MathForGames
         public static void CloseApplication()
         {
             _applicationShouldClose = true;
+        }
+
+        private void AddRain(Scene scene)
+        {
+
         }
     }
 }

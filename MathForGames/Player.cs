@@ -29,7 +29,7 @@ namespace MathForGames
         }
 
         public override void Update()
-        {
+        {                  
             Vector2 moveDirection = new Vector2();
 
             ConsoleKey keyPressed = Engine.GetNextKey();
@@ -43,11 +43,6 @@ namespace MathForGames
             if (keyPressed == ConsoleKey.S)
                 moveDirection = new Vector2 { Y = 1 };
 
-            if (keyPressed == ConsoleKey.LeftArrow)
-            {
-                
-            }
-
             Velocity = moveDirection * Speed;
 
             Position += Velocity;         
@@ -55,7 +50,7 @@ namespace MathForGames
 
         public override void OnCollision(Actor actor)
         {
-            
+            Engine.CloseApplication();
         }
     }
 }
